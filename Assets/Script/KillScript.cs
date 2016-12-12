@@ -29,7 +29,9 @@ public class KillScript : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.name != "Falling Platform Trigger" && other.name != "JumpPadTrigger")
+        if (other.name != "Falling Platform Trigger" &&
+            other.name != "JumpPadTrigger" &&
+            other.name != "MouseTrapTrigger")
         {
             print("DEAD : " + other);
             transform.position = checkpoint;

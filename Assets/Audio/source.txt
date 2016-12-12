@@ -1,0 +1,4 @@
+trap		https://www.freesound.org/people/ThePriest909/sounds/278151/
+sparks		https://www.freesound.org/people/FreqMan/sounds/32682/
+radio		http://www.newgrounds.com/audio/listen/704036
+stove		https://www.freesound.org/people/TiesWijnen/sounds/364904/
