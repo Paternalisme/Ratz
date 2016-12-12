@@ -505,8 +505,8 @@ private function GetDesiredHorizontalVelocity () {
 	var maxSpeed : float = MaxSpeedInDirection(desiredLocalDirection);
 	if (grounded) {
 		// Modify max speed on slopes based on slope speed multiplier curve
-		var movementSlopeAngle = Mathf.Asin(movement.velocity.normalized.y)  * Mathf.Rad2Deg;
-		maxSpeed *= movement.slopeSpeedMultiplier.Evaluate(movementSlopeAngle);
+		//var movementSlopeAngle = Mathf.Asin(movement.velocity.normalized.y)  * Mathf.Rad2Deg;
+		//maxSpeed *= movement.slopeSpeedMultiplier.Evaluate(movementSlopeAngle);
 	}
 	return tr.TransformDirection(desiredLocalDirection * maxSpeed);
 }
@@ -551,7 +551,7 @@ function IsGrounded () {
 }
 
 function TooSteep () {
-	return (groundNormal.y <= Mathf.Cos(controller.slopeLimit * Mathf.Deg2Rad));
+    return (false);//groundNormal.y <= Mathf.Cos(controller.slopeLimit * Mathf.Deg2Rad));
 }
 
 function GetDirection () {
