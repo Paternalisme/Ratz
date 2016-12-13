@@ -3,11 +3,11 @@ using System.Collections;
 
 public class JumpingPad : MonoBehaviour {
 
-    public Rigidbody rigidbody;
+    public CharacterMotor motor;
 
     // Use this for initialization
     void Start () {
-	
+	    
 	}
 	
 	// Update is called once per frame
@@ -16,9 +16,6 @@ public class JumpingPad : MonoBehaviour {
 	}
    
     void OnTriggerEnter () {
-        print("hello");
-        rigidbody.isKinematic = false;
-        rigidbody.AddForce(0, 10, 0, ForceMode.Impulse);
-        //rigidbody.isKinematic = true;
+        motor.SetVelocity(new Vector3(-35, 45, -25));
     }
 }
