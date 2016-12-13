@@ -4,12 +4,12 @@ using System.Collections;
 public class KillScript : MonoBehaviour {
 
     // Animations to reset
-    public CheckpointScript checkpoint;
+    CheckpointScript checkpoint;
 
 
 	// Use this for initialization
 	void Start () {
-
+        checkpoint = FindObjectOfType<CheckpointScript>();
     }
 	
 	// Update is called once per frame

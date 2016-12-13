@@ -3,11 +3,11 @@ using System.Collections;
 
 public class BreadcrumbScript : MonoBehaviour {
 
-    public CheckpointScript checkpoint;
+    CheckpointScript checkpoint;
 
 	// Use this for initialization
 	void Start () {
-	
+        checkpoint = FindObjectOfType<CheckpointScript>();
 	}
 	
 	// Update is called once per frame
@@ -20,4 +20,5 @@ public class BreadcrumbScript : MonoBehaviour {
         checkpoint.score += 1;
         Destroy(this.gameObject);
     }
+
 }
