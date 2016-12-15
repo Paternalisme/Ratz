@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class CheckpointScript : MonoBehaviour {
 
     public int score = 0;
     public Vector3 checkpoint;
     public Animation shelfAnim;
+    public Text scoreScreen;
 
     // Use this for initialization
     void Start () {
@@ -17,7 +19,7 @@ public class CheckpointScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+        scoreScreen.text = score.ToString();
 	}
 
     void OnTriggerEnter(Collider other)

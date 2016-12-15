@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class BreadcrumbScript : MonoBehaviour {
 
     CheckpointScript checkpoint;
@@ -8,6 +9,7 @@ public class BreadcrumbScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         checkpoint = FindObjectOfType<CheckpointScript>();
+
 	}
 	
 	// Update is called once per frame
@@ -15,10 +17,13 @@ public class BreadcrumbScript : MonoBehaviour {
 	    
 	}
 
-    void OnTriggerEnter()
+    void OnTriggerEnter(Collider other)
     {
-        checkpoint.score += 1;
-        Destroy(this.gameObject);
+        if (other.name == "Player")
+        {
+            checkpoint.score += 1;
+            Destroy(this.gameObject);
+        }
     }
 
 }
