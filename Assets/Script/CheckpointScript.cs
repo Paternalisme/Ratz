@@ -37,7 +37,8 @@ public class CheckpointScript : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.name == "First Checkpoint" || other.name == "Second Checkpoint")
+        if (other.name == "First Checkpoint" || other.name == "Second Checkpoint" || other.name == "Third Checkpoint"
+            || other.name == "Fourth Checkpoint")
         {
             checkpoint = other.transform.position;
         }
