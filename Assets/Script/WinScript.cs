@@ -23,6 +23,7 @@ public class WinScript : MonoBehaviour {
         {
             Cursor.visible = true;
             winScreen.SetActive(true);
+            FindObjectOfType<MouseLook_Old>().enabled = false;
         }
     }
 

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CheckpointScript : MonoBehaviour {
 
@@ -29,6 +30,7 @@ public class CheckpointScript : MonoBehaviour {
         if (Input.GetKeyDown("escape"))
         {
             Cursor.visible = !Cursor.visible;
+            GetComponent<MouseLook_Old>().enabled = !GetComponent<MouseLook_Old>().enabled;
             menuPanel.SetActive(!menuPanel.activeSelf);
         }
     }
@@ -45,5 +47,22 @@ public class CheckpointScript : MonoBehaviour {
     {
         transform.position = checkpoint;
         shelfAnim.Play("ShelfResetAnimation");
+    }
+
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
+    public void Back()
+    {
+        Cursor.visible = !Cursor.visible;
+        GetComponent<MouseLook_Old>().enabled = !GetComponent<MouseLook_Old>().enabled;
+        menuPanel.SetActive(!menuPanel.activeSelf);
     }
 }
