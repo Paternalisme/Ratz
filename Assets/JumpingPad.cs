@@ -16,6 +16,6 @@ public class JumpingPad : MonoBehaviour {
 	}
    
     void OnTriggerEnter () {
-        motor.SetVelocity(new Vector3(-35, 45, -25));
+        motor.SetVelocity(new Vector3(-45, 45, -25));
     }
 }
