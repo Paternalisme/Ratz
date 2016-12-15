@@ -10,6 +10,7 @@ public class CheckpointScript : MonoBehaviour {
     public Animation shelfAnim;
     public Text scoreScreen;
     public GameObject menuPanel;
+    public Animation startAnimation;
 
     // Use this for initialization
     void Start () {
@@ -18,6 +19,7 @@ public class CheckpointScript : MonoBehaviour {
         checkpoint.y = -60.806f;
         checkpoint.z = 15.3f;
         Cursor.visible = false;
+        startAnimation.Play();
     }
 	
 	// Update is called once per frame
