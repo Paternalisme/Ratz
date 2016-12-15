@@ -17,7 +17,7 @@ public class BreadcrumbScript : MonoBehaviour {
 	    
 	}
 
-    void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         if (other.name == "Player")
         {

@@ -55,37 +55,29 @@ public class MainMenu : MonoBehaviour {
         if (menu.Equals("Shortcuts"))
         {
 
-            GUI.Box(new Rect(Screen.width / 2 + 25, Screen.height / 2 - 170, 100, 50), inputManager.GetKeyNameForButton("Up"));
-            if (GUI.Button(new Rect(Screen.width / 2 - 125, Screen.height / 2 - 170, 100, 50), "Up"))
-            {
-                //StartRebindFor("Up");
-            }
+            GUI.Box(new Rect(Screen.width / 2 + 25, Screen.height / 2 - 170, 100, 30), inputManager.GetKeyNameForButton("Up"));
+            GUI.Box(new Rect(Screen.width / 2 - 125, Screen.height / 2 - 170, 100, 30), "Forward");
 
-            GUI.Box(new Rect(Screen.width / 2 + 25, Screen.height / 2 - 110, 100, 50), inputManager.GetKeyNameForButton("Down"));
-            if (GUI.Button(new Rect(Screen.width / 2 - 125, Screen.height / 2 - 110, 100, 50), "Down"))
-            {
-                //StartRebindFor("Down");
-            }
+            GUI.Box(new Rect(Screen.width / 2 + 25, Screen.height / 2 - 110, 100, 30), inputManager.GetKeyNameForButton("Down"));
+            GUI.Box(new Rect(Screen.width / 2 - 125, Screen.height / 2 - 110, 100, 30), "Backward");
+            
+            GUI.Box(new Rect(Screen.width / 2 + 25, Screen.height / 2 - 50, 100, 30), inputManager.GetKeyNameForButton("Right"));
+            GUI.Box(new Rect(Screen.width / 2 - 125, Screen.height / 2 - 50, 100, 30), "Right");
 
-            GUI.Box(new Rect(Screen.width / 2 + 25, Screen.height / 2 - 50, 100, 50), inputManager.GetKeyNameForButton("Right"));
-            if (GUI.Button(new Rect(Screen.width / 2 - 125, Screen.height / 2 - 50, 100, 50), "Right"))
-            {
-                //StartRebindFor("Right");
-            }
+            GUI.Box(new Rect(Screen.width / 2 + 25, Screen.height / 2 + 10, 100, 30), inputManager.GetKeyNameForButton("Left"));
+            GUI.Box(new Rect(Screen.width / 2 - 125, Screen.height / 2 + 10, 100, 30), "Left");
 
-            GUI.Box(new Rect(Screen.width / 2 + 25, Screen.height / 2 + 10, 100, 50), inputManager.GetKeyNameForButton("Left"));
-            if (GUI.Button(new Rect(Screen.width / 2 - 125, Screen.height / 2  + 10, 100, 50), "Left"))
-            {
-                //StartRebindFor("Left");
-            }
+            GUI.Box(new Rect(Screen.width / 2 + 25, Screen.height / 2 + 70, 100, 30), inputManager.GetKeyNameForButton("Jump"));
+            GUI.Box(new Rect(Screen.width / 2 - 125, Screen.height / 2 + 70, 100, 30), "Jump");
 
-            GUI.Box(new Rect(Screen.width / 2 + 25, Screen.height / 2 + 75, 100, 50), inputManager.GetKeyNameForButton("Jump"));
-            if (GUI.Button(new Rect(Screen.width / 2 - 125, Screen.height / 2 + 75, 100, 50), "Jump"))
-            {
-               // StartRebindFor("Jump");
-            }
+            GUI.Box(new Rect(Screen.width / 2 + 25, Screen.height / 2 + 130, 100, 30), "R");
+            GUI.Box(new Rect(Screen.width / 2 - 125, Screen.height / 2 + 130, 100, 30), "Load");
 
-            if (GUI.Button(new Rect(Screen.width / 2 - 75, Screen.height / 2 + 150, 150, 50), "Return"))
+            GUI.Box(new Rect(Screen.width / 2 + 25, Screen.height / 2 + 190, 100, 30), "Escape");
+            GUI.Box(new Rect(Screen.width / 2 - 125, Screen.height / 2 + 190, 100, 30), "Menu");
+
+
+            if (GUI.Button(new Rect(Screen.width / 2 - 75, Screen.height / 2 + 250, 150, 50), "Return"))
             {
                 menu = "Main";
             }

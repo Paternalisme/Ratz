@@ -8,6 +8,7 @@ public class CheckpointScript : MonoBehaviour {
     public Vector3 checkpoint;
     public Animation shelfAnim;
     public Text scoreScreen;
+    public GameObject menuPanel;
 
     // Use this for initialization
     void Start () {
@@ -15,12 +16,22 @@ public class CheckpointScript : MonoBehaviour {
         checkpoint.x = 72.643f;
         checkpoint.y = -60.806f;
         checkpoint.z = 15.3f;
+        Cursor.visible = false;
     }
 	
 	// Update is called once per frame
 	void Update () {
         scoreScreen.text = score.ToString();
-	}
+        if (Input.GetKeyDown("r"))
+        {
+            Die();
+        }
+        if (Input.GetKeyDown("escape"))
+        {
+            Cursor.visible = !Cursor.visible;
+            menuPanel.SetActive(!menuPanel.activeSelf);
+        }
+    }
 
     void OnTriggerEnter(Collider other)
     {

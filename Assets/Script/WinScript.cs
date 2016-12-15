@@ -21,6 +21,7 @@ public class WinScript : MonoBehaviour {
     {
         if (other.name == "Player")
         {
+            Cursor.visible = true;
             winScreen.SetActive(true);
         }
     }
