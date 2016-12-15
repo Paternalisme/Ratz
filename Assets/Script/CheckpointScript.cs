@@ -11,6 +11,8 @@ public class CheckpointScript : MonoBehaviour {
     public Text scoreScreen;
     public GameObject menuPanel;
     public Animation startAnimation;
+    public Camera playerCam;
+    public Camera introCam;
 
     // Use this for initialization
     void Start () {
@@ -31,6 +33,12 @@ public class CheckpointScript : MonoBehaviour {
         }
         if (Input.GetKeyDown("escape"))
         {
+            if (startAnimation.IsPlaying("CameraIntroClip"))
+            {
+                startAnimation.Stop();
+                introCam.enabled = false;
+                playerCam.enabled = true;
+            }
             Cursor.visible = !Cursor.visible;
             GetComponent<MouseLook_Old>().enabled = !GetComponent<MouseLook_Old>().enabled;
             menuPanel.SetActive(!menuPanel.activeSelf);
@@ -40,9 +48,10 @@ public class CheckpointScript : MonoBehaviour {
     void OnTriggerEnter(Collider other)
     {
         if (other.name == "First Checkpoint" || other.name == "Second Checkpoint" || other.name == "Third Checkpoint"
-            || other.name == "Fourth Checkpoint")
+            || other.name == "Fourth Checkpoint" || other.name == "Fifth Checkpoint" || other.name == "Sixth Checkpoint")
         {
             checkpoint = other.transform.position;
+            Destroy(other.gameObject);
         }
     }
 

@@ -17,6 +17,6 @@ public class FlyTrapJumpad : MonoBehaviour {
 
     void OnTriggerEnter()
     {
-        motor.SetVelocity(new Vector3(0, 60, 0));
+        motor.SetVelocity(new Vector3(0, 70, 0));
     }
 }
