@@ -1,0 +1,9 @@
+pine		https://s-media-cache-ak0.pinimg.com/originals/1e/38/ea/1e38eaa85d50cd5e7d6d794777588282.jpg
+birch		http://www.discovertextures.com/wp-content/uploads/2016/02/wood-texture0039-e1455019125837.jpg
+gold		http://www.psdgraphics.com/file/gold-texture.jpg
+varnished wood	https://designmodo.com/wp-content/uploads/2011/11/Wood-Textures-1.jpg
+book1		http://sirstyx.deviantart.com/art/Old-Book-texture-212216272
+book2		https://images-na.ssl-images-amazon.com/images/I/51yhftYqizL._SX258_BO1,204,203,200_.jpg
+book3		https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/50ShadesofGreyCoverArt.jpg/220px-50ShadesofGreyCoverArt.jpg
+book3-bis	https://images-na.ssl-images-amazon.com/images/I/51OMPMtjtaL._SY498_BO1,204,203,200_.jpg
+paper stack	http://moooicarpets.com/wp-content/uploads/2015/04/18_paper-stack_lr.jpg
