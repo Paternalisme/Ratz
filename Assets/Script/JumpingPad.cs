@@ -17,7 +17,10 @@ public class JumpingPad : MonoBehaviour {
 	}
    
     void OnTriggerEnter (Collider other) {
+<<<<<<< HEAD
         GameObject.Find("PlayerAudioSource_Spring").GetComponent<AudioSource>().Play();
+=======
+>>>>>>> 0e8de5618c07172b852f44fd3787d3a1afe65046
         motor.SetVelocity(new Vector3(-45, 45, -25));
         bds.OnTriggerEnter(other);
     }

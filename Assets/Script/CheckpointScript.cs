@@ -11,7 +11,11 @@ public class CheckpointScript : MonoBehaviour {
     public Text scoreScreen;
     public GameObject menuPanel;
     public Animation startAnimation;
+<<<<<<< HEAD
     public GameObject playerCharacter;
+=======
+    public Camera playerCam;
+>>>>>>> 0e8de5618c07172b852f44fd3787d3a1afe65046
     public Camera introCam;
 
     // Use this for initialization
@@ -36,8 +40,13 @@ public class CheckpointScript : MonoBehaviour {
             if (startAnimation.IsPlaying("CameraIntroClip"))
             {
                 startAnimation.Stop();
+<<<<<<< HEAD
                 introCam.gameObject.SetActive(false);
                 playerCharacter.SetActive(true);
+=======
+                introCam.enabled = false;
+                playerCam.enabled = true;
+>>>>>>> 0e8de5618c07172b852f44fd3787d3a1afe65046
             }
             Cursor.visible = !Cursor.visible;
             GetComponent<MouseLook_Old>().enabled = !GetComponent<MouseLook_Old>().enabled;

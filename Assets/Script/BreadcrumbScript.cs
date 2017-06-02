@@ -22,7 +22,10 @@ public class BreadcrumbScript : MonoBehaviour {
         if (other.name == "Player")
         {
             checkpoint.score += 1;
+<<<<<<< HEAD
             GameObject.Find("PlayerAudioSource_Crunch").GetComponent<AudioSource>().Play();
+=======
+>>>>>>> 0e8de5618c07172b852f44fd3787d3a1afe65046
             Destroy(this.gameObject);
         }
     }

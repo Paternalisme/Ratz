@@ -1,8 +1,12 @@
 trap		https://www.freesound.org/people/ThePriest909/sounds/278151/
 sparks		https://www.freesound.org/people/FreqMan/sounds/32682/
 radio		http://www.newgrounds.com/audio/listen/704036
+<<<<<<< HEAD
 stove		https://www.freesound.org/people/TiesWijnen/sounds/364904/
 crunch		http://soundbible.com/1394-Dragon-Bite.html
 spring		https://www.freesound.org/people/sandyrb/sounds/90954/
 rolling		https://www.freesound.org/people/raguanu/sounds/54785/
 bgm2		http://www.newgrounds.com/audio/listen/511364
+=======
+stove		https://www.freesound.org/people/TiesWijnen/sounds/364904/
+>>>>>>> 0e8de5618c07172b852f44fd3787d3a1afe65046
