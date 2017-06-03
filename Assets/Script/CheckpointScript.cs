@@ -3,7 +3,8 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class CheckpointScript : MonoBehaviour {
+public class CheckpointScript : MonoBehaviour
+{
 
     public int score = 0;
     public Vector3 checkpoint;
@@ -11,15 +12,13 @@ public class CheckpointScript : MonoBehaviour {
     public Text scoreScreen;
     public GameObject menuPanel;
     public Animation startAnimation;
-<<<<<<< HEAD
-    public GameObject playerCharacter;
-=======
+    public GameObject playerChara;
     public Camera playerCam;
->>>>>>> 0e8de5618c07172b852f44fd3787d3a1afe65046
     public Camera introCam;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         checkpoint = transform.position;
         checkpoint.x = 72.643f;
         checkpoint.y = -60.806f;
@@ -27,9 +26,10 @@ public class CheckpointScript : MonoBehaviour {
         Cursor.visible = false;
         startAnimation.Play();
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
         scoreScreen.text = score.ToString();
         if (Input.GetKeyDown("r"))
         {
@@ -40,13 +40,10 @@ public class CheckpointScript : MonoBehaviour {
             if (startAnimation.IsPlaying("CameraIntroClip"))
             {
                 startAnimation.Stop();
-<<<<<<< HEAD
-                introCam.gameObject.SetActive(false);
-                playerCharacter.SetActive(true);
-=======
                 introCam.enabled = false;
+                print("HEYA");
                 playerCam.enabled = true;
->>>>>>> 0e8de5618c07172b852f44fd3787d3a1afe65046
+                playerChara.SetActive(true);
             }
             Cursor.visible = !Cursor.visible;
             GetComponent<MouseLook_Old>().enabled = !GetComponent<MouseLook_Old>().enabled;
