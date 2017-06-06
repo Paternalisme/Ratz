@@ -24,7 +24,7 @@ public class BreadcrumbScript : MonoBehaviour
     {
         if (other.name == "Player")
         {
-            checkpoint.score += 1;
+            checkpoint.EatCheese();
             Destroy(this.gameObject);
         }
     }

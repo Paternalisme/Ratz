@@ -15,6 +15,7 @@ public class CheckpointScript : MonoBehaviour
     public GameObject playerChara;
     public Camera playerCam;
     public Camera introCam;
+	public AudioSource crunch;
 
     // Use this for initialization
     void Start()
@@ -60,6 +61,12 @@ public class CheckpointScript : MonoBehaviour
             Destroy(other.gameObject);
         }
     }
+
+	public void EatCheese()
+	{
+		score += 1;
+		crunch.Play ();
+	}
 
     public void Die()
     {
